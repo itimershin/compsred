@@ -12,7 +12,7 @@ default: &default
 development:
   <<: *default
   host: localhost
-  database: comp1
+  database: compete
   username: itimershin
   password: x123Xqwe
 
@@ -22,7 +22,7 @@ development:
 test:
   <<: *default
   host: localhost
-  database: comp1
+  database: compete
   username: itimershin
   password: x123Xqwe
 
@@ -30,6 +30,6 @@ test:
 production:
   <<: *default
   host: localhost
-  database: comp1
+  database: compete
   username: itimershin
   password: x123Xqwe
