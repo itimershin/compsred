@@ -1,0 +1,14 @@
+%nav.navbar
+  %ul.nav.navbar-nav
+
+    - if user_signed_in?
+      %li= link_to 'link 1', destroy_user_session_path, method: :delete
+      %li= link_to 'link 2', destroy_user_session_path, method: :delete
+      %li= link_to 'link 3', destroy_user_session_path, method: :delete
+      %li= link_to 'Выход', destroy_user_session_path, method: :delete
+    - else
+      %li= link_to 'Войти', new_user_session_path
+
+  %form.navbar-form.navbar-left{:role => "search"}
+    .form-group
+      %input.form-control{:placeholder => "Найти", :type => "text"}
